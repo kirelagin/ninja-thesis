@@ -1,0 +1,32 @@
+\title{Осуществление некоторой вроде бы полезной деятельности, достаточно нетривиальной, чтобы считаться НИР}
+\author{Елагин К. В.\\
+Научный руководитель: Василинец С. П.}
+
+
+\input{preamble.latex}
+
+
+\usepackage{import}
+\newcommand{\includechapter}[1]{\subimport{ch_#1/}{chapter.latex}}
+\newcommand{\includesection}[1]{\input{sec_#1.latex}}
+
+
+\begin{document}
+
+\input{Title.latex}
+
+\tableofcontents
+
+\likechapter{Введение}
+\input{Introduction.latex}
+
+\includechapter{First}
+
+\includechapter{Second}
+
+\likechapter{Заключение}
+\input{Conclusion.latex}
+
+\bibliography{bib}
+
+\end{document}
