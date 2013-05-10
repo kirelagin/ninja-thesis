@@ -116,15 +116,15 @@
 
 
 % For some reason those are missing in polyglossia
-\def\bbljan{январ}
-\def\bblfeb{февраль}
+\def\bbljan{янв}
+\def\bblfeb{февр}
 \def\bblmar{март}
-\def\bblapr{апрель}
+\def\bblapr{апр}
 \def\bblmay{май}
 \def\bbljun{июнь}
 \def\bbljul{июль}
-\def\bblaug{август}
-\def\bblsep{сентябрь}
-\def\bbloct{октбярь}
-\def\bblnov{ноябрь}
-\def\bbldec{декабрь}
+\def\bblaug{авг}
+\def\bblsep{сент}
+\def\bbloct{окт}
+\def\bblnov{нояб}
+\def\bbldec{дек}
