@@ -1,57 +1,28 @@
+# vim: set filetype=python :
+
 import os.path
-from waflib import TaskGen, Task
+from waflib import TaskGen, Task, Utils
 
 def configure(conf):
     conf.load('tex')
-   # conf.find_program('lualatex')
-    conf.find_program('pandoc')
-   # conf.env['PDFLATEX'] = conf.env['LUALATEX']
-
-@TaskGen.extension('.pd')
-def process_pandoc(self, node):
-    bib = getattr(self, 'bibliography', None)
-    disabled_exts= getattr(self, 'disable', [])
-    if bib:
-        bib = self.to_nodes(bib)
-        bib_str = "--natbib --bibliography={0}".format(bib[0].path_from(self.bld.bldnode))
-    else:
-        bib = []
-        bib_str = ""
-    exts_str = ''.join(map(lambda e: '-'+e, disabled_exts))
-    read_format = 'markdown' + exts_str
-    out_source = node.change_ext('.latex', '.pd')
-    Task.task_factory('pandoc', 
-        '${PANDOC} -r ${tsk.read_format} -R -S --latex-engine=xelatex --listings -S -o ${TGT} ${tsk.bib_str} ${SRC[0].abspath()}',
-        shell        = False,
-        ext_in       = '.pd', 
-        ext_out      = '.latex', 
-    )
-    tsk = self.create_task('pandoc', [node] + bib, out_source)
-    tsk.bib_str = bib_str
-    tsk.read_format= read_format
+    conf.load('pandoc', tooldir='.')
 
 def build(bld):
-    def source_path(item, ext='.pd'):
-        if isinstance(item, basestring):
-            return item + ext
-        elif isinstance(item, tuple):
-            return ' '.join(map(lambda s: os.path.join('ch_' + item[0], 'sec_' + s + ext), item[1]))
-        else:
-            raise TypeError('Bad source')
+    sources = """
+        Introduction.pd
+        ch_First/chapter.latex
+        ch_First/sec_Intro.pd
+        ch_First/sec_Moar.pd
+        ch_Second/chapter.latex
+        ch_Second/sec_Text.pd
+        Conclusion.pd
+    """
+    bld(features='pandoc-merge', source=sources + ' bib.bib', target='main.latex',
+            disabled_exts='fancy_lists', 
+            flags='-R -S --latex-engine=xelatex --listings --chapters',
+            linkflags='--toc --chapters -R', template='template.latex')
 
-    sources = [
-        'Introduction',
-        ('First', ['Intro', 'Moar']),
-        ('Second', ['Text']),
-        'Conclusion',
-    ]
-    bld(source=' '.join(map(source_path, sources)), bibliography='bib.bib', disable=['fancy_lists'])
-
-    bld.add_group()
-
-    bld(
-        features = 'tex',
-        type     = 'xelatex',
-        source   = 'main.latex',
-        target   = 'main.pdf',
-       )
+    # Outputs main.pdf
+    bld(features='tex', type='xelatex', source='main.latex', prompt=True)
+    bld.add_manual_dependency(bld.bldnode.find_or_declare('main.pdf'),
+                              bld.srcnode.find_node('utf8gost705u.bst'))
