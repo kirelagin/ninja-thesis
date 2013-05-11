@@ -25,10 +25,12 @@ def build(bld):
         'Introduction',
         ('01', [
             'General',
-            'Dalvik'
+            'Dalvik',
         ]),
         ('02', [
-            'Browsers'
+            'Browsers',
+            'JS',
+            'HTML5',
         ]),
         'Conclusion',
     ])
