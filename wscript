@@ -1,8 +1,5 @@
 # vim: set filetype=python :
 
-import os.path
-from waflib import TaskGen, Task, Utils
-
 def configure(conf):
     conf.load('tex')
     conf.load('pandoc', tooldir='.')
