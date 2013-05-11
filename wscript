@@ -1,17 +1,38 @@
 # vim: set filetype=python :
 
+import os.path
+
+
 def configure(conf):
     conf.load('tex')
     conf.load('pandoc', tooldir='.')
 
 def build(bld):
-    sources = """
-        Introduction.pd
-        ch_01/chapter.pd
-        ch_01/sec_General.pd
-        ch_01/sec_Dalvik.pd
-        Conclusion.pd
-    """
+    def make_sources(parts):
+        sources = []
+        for ch in parts:
+            if isinstance(ch, basestring):
+                sources.append(ch + '.pd')
+            elif isinstance(ch, tuple):
+                chdir = 'ch_' + ch[0]
+                sources.append(os.path.join(chdir, 'chapter.pd'))
+                for sec in ch[1]:
+                    sources.append(os.path.join(chdir, 'sec_' + sec + '.pd'))
+            else:
+                raise TypeError('Wrong part')
+        return ' '.join(sources)
+    sources = make_sources([
+        'Introduction',
+        ('01', [
+            'General',
+            'Dalvik'
+        ]),
+        ('02', [
+            'Browsers'
+        ]),
+        'Conclusion',
+    ])
+
     bld(features='pandoc-merge', source=sources + ' bib.bib', target='main.latex',
             disabled_exts='fancy_lists', 
             flags='-R -S --latex-engine=xelatex --listings --chapters',
