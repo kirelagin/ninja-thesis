@@ -32,6 +32,9 @@ def build(bld):
             'JS',
             'HTML5',
         ]),
+        ('03', [
+            'Problem',
+        ]),
         'Conclusion',
     ])
 
