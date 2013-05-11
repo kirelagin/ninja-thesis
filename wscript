@@ -7,11 +7,9 @@ def configure(conf):
 def build(bld):
     sources = """
         Introduction.pd
-        ch_First/chapter.latex
-        ch_First/sec_Intro.pd
-        ch_First/sec_Moar.pd
-        ch_Second/chapter.latex
-        ch_Second/sec_Text.pd
+        ch_01/chapter.pd
+        ch_01/sec_General.pd
+        ch_01/sec_Dalvik.pd
         Conclusion.pd
     """
     bld(features='pandoc-merge', source=sources + ' bib.bib', target='main.latex',
