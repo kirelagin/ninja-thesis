@@ -41,8 +41,7 @@ def build(bld):
 
     sources = [
         'Introduction',
-        ('First', ['Intro', 'Moar']),
-        ('Second', ['Text']),
+        #('01', ['Intro', 'Moar']),
         'Conclusion',
     ]
     bld(source=' '.join(map(source_path, sources)), bibliography='bib.bib', disable=['fancy_lists'])

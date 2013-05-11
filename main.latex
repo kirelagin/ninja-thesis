@@ -1,4 +1,4 @@
-\title{Осуществление некоторой вроде бы полезной деятельности, достаточно нетривиальной, чтобы считаться НИР}
+\title{Создание инфраструктуры \\ для исполнения в браузере приложений ОС Android}
 \author{Елагин К. В.\\
 Научный руководитель: Василинец С. П.}
 
@@ -19,10 +19,6 @@
 
 \likechapter{Введение}
 \input{Introduction.latex}
-
-\includechapter{First}
-
-\includechapter{Second}
 
 \likechapter{Заключение}
 \input{Conclusion.latex}
