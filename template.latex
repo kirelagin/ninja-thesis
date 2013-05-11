@@ -5,24 +5,18 @@
 
 \input{preamble.latex}
 
-
-\usepackage{import}
-\newcommand{\includechapter}[1]{\subimport{ch_#1/}{chapter.latex}}
-\newcommand{\includesection}[1]{\input{sec_#1.latex}}
-
-
 \begin{document}
+$include-before$
 
 \input{Title.latex}
 
+$if(toc)$
 \tableofcontents
+$endif$
 
-\likechapter{Введение}
-\input{Introduction.latex}
-
-\likechapter{Заключение}
-\input{Conclusion.latex}
+$body$
 
 \bibliography{bib}
 
+$include-after$
 \end{document}
