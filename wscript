@@ -34,6 +34,7 @@ def build(bld):
         ]),
         ('03', [
             'Problem',
+            'Tools',
         ]),
         'Conclusion',
     ])
