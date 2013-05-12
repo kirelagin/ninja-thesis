@@ -9,6 +9,7 @@
 $include-before$
 
 \input{Title.latex}
+\addtocounter{page}{1}
 
 $if(toc)$
 \tableofcontents
