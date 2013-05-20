@@ -122,6 +122,7 @@
 \definecolor{redstrings}{rgb}{0.5,0,0}
 \definecolor{graylinenumbers}{rgb}{0.5,0.5,0.5}
 \input{fsharp.latex}
+\input{pseudo.latex}
 \lstset{%
     basicstyle=\footnotesize\ttfamily,
     columns=fullflexible,
