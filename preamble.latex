@@ -139,6 +139,9 @@
     stringstyle=\color{redstrings}
 }
 \renewcommand\lstlistingname{Листинг}
+\lstnewenvironment{code}[1][]
+    {\lstset{float=ht,#1}}
+        {}
 
 % For some reason those are missing in polyglossia
 \def\bbljan{янв}
