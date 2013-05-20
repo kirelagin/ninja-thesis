@@ -123,8 +123,14 @@
 \captionsetup[lstlisting]{labelformat=gostcaption}
 
 
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+
+
 \usepackage[bookmarks=true,unicode=true,pdfstartview={FitV},hidelinks]{hyperref}
 \usepackage[all]{hypcap}
+\newcommand{\inlref}[2]{\hyperref[#2]{#1~\ref*{#2}}}
 
 \usepackage{mathtools}
 
