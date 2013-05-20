@@ -109,6 +109,20 @@
 \renewcommand{\labelenumiii}{\arabic{enumiii})}
 
 
+\usepackage{multirow}
+\usepackage{array}
+\renewcommand{\arraystretch}{1.2}
+
+
+\usepackage[tableposition=top]{caption}
+\DeclareCaptionLabelFormat{gostcaption}{#1 #2}
+\DeclareCaptionLabelSeparator{gost}{~—~}
+\captionsetup{labelsep=gost}
+\captionsetup[figure]{labelformat=gostcaption}
+\captionsetup[table]{labelformat=gostcaption}
+\captionsetup[lstlisting]{labelformat=gostcaption}
+
+
 \usepackage[bookmarks=true,unicode=true,pdfstartview={FitV},hidelinks]{hyperref}
 \usepackage[all]{hypcap}
 
