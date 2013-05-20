@@ -118,6 +118,7 @@
 \usepackage{xcolor}
 \usepackage{listings}
 \definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{bluekw}{rgb}{0,0,0.5}
 \definecolor{redstrings}{rgb}{0.5,0,0}
 \definecolor{graylinenumbers}{rgb}{0.5,0.5,0.5}
 \input{fsharp.latex}
@@ -125,6 +126,7 @@
     basicstyle=\footnotesize\ttfamily,
     columns=fullflexible,
     breaklines=true,
+    breakatwhitespace,
     language=FSharp,
     extendedchars=true,
     frame=single,
@@ -135,7 +137,7 @@
     rulecolor=\color{black},
     tabsize=2,
     commentstyle=\color{greencomments},
-    keywordstyle=\color{blue},
+    keywordstyle=\color{bluekw}\bfseries,
     stringstyle=\color{redstrings}
 }
 \renewcommand\lstlistingname{Листинг}
