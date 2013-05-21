@@ -37,6 +37,7 @@ def build(bld):
             'Difficulties',
         ]),
         'Conclusion',
+        'Licensing',
     ])
 
     bld(features='pandoc-merge', source=sources + ' bib.bib', target='main.latex',
