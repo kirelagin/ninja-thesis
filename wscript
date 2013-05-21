@@ -30,7 +30,6 @@ def build(bld):
         ('02', [
             'Browsers',
             'JS',
-            'HTML5',
         ]),
         ('03', [
             'Problem',
