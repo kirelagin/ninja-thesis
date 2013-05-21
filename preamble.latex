@@ -143,12 +143,12 @@
 \definecolor{graylinenumbers}{rgb}{0.5,0.5,0.5}
 \input{fsharp.latex}
 \input{pseudo.latex}
+\input{javascript.latex}
 \lstset{%
     basicstyle=\footnotesize\ttfamily,
     columns=fullflexible,
     breaklines=true,
     breakatwhitespace,
-    language=FSharp,
     extendedchars=true,
     frame=single,
     captionpos=b,
