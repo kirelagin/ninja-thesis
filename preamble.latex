@@ -132,6 +132,20 @@
 \usepackage[all]{hypcap}
 \newcommand{\inlref}[2]{\hyperref[#2]{#1~\ref*{#2}}}
 
+
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\DeclareGraphicsExtensions{.eps,.pdf,.png,.jpg}
+\newcommand{\image}[2]{%
+    \begin{figure}[ht]
+        \includegraphics[width=\textwidth]{#1}
+        \caption{#2}
+        \label{img:#1}
+    \end{figure}
+}
+\def\figureautorefname{Рисунок}
+
+
 \usepackage{mathtools}
 
 
