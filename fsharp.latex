@@ -1,6 +1,6 @@
 \lstdefinelanguage{FSharp}{%
     sensitive=false,
-    morekeywords={let, new, match, with, rec, open, module, namespace, type, of, member, and, for, in, do, begin, end, fun, function, try, mutable, if, then, else},
+    morekeywords={let, new, match, with, rec, open, module, namespace, type, of, member, and, for, in, do, begin, end, fun, function, try, mutable, if, then, else, int8, int16, int32, int, int64, float32, float},
     morecomment=[l]{///},
     morecomment=[l]{//},
     morecomment=[s]{{(*}{*)}},
