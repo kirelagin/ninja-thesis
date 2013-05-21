@@ -148,6 +148,8 @@
     breaklines=true,
     breakatwhitespace,
     extendedchars=true,
+    aboveskip=1em,
+    belowskip=1em,
     frame=single,
     captionpos=b,
     numbers=left,
