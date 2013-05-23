@@ -3,6 +3,18 @@
 
 \begin{itemize}
     \src{img:android}{\authorcommons{Smieh}}{\licenseccbysa}{\sourcecommons{Android-System-Architecture.svg}}
+    \item \autoref{img:android-js} —
+        \begin{itemize}
+            \item на основе работы, использованной в качестве \inlref{рисунка}{img:android};
+            \item логотип Chromium —
+                  автор: \href{http://dev.chromium.org/Home}{The Chromium Development Documentation Project},
+                  лицензия: \licenseccbytwofive, \\
+                  \sourcecommons{Chromium_11_Logo.svg}.
+            \item логотип JS —
+                  автор: \href{https://github.com/voodootikigod}{Chris Williams},
+                  лицензия: \licensewtfpl, \\
+                  \url{https://github.com/voodootikigod/logo.js}.
+        \end{itemize}
 \end{itemize}
 
 \end{footnotesize}

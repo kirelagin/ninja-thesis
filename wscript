@@ -28,9 +28,12 @@ def build(bld):
             'Dalvik',
             'Web',
         ]),
-        ('03', [
+        ('02', [
+            'Global',
             'Problem',
             'Tools',
+        ]),
+        ('03', [
             'Difficulties',
         ]),
         'Conclusion',
