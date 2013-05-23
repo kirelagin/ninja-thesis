@@ -24,12 +24,9 @@ def build(bld):
     sources = make_sources([
         'Introduction',
         ('01', [
-            'General',
+            'Android',
             'Dalvik',
-        ]),
-        ('02', [
-            'Browsers',
-            'JS',
+            'Web',
         ]),
         ('03', [
             'Problem',
