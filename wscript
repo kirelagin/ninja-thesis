@@ -13,6 +13,7 @@ def build(bld):
         ch_Second/chapter.latex
         ch_Second/sec_Text.pd
         Conclusion.pd
+        Licensing.pd
     """
     bld(features='pandoc-merge', source=sources + ' bib.bib', target='main.latex',
             disabled_exts='fancy_lists', 

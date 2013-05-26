@@ -193,3 +193,6 @@
 \def\bbloct{окт}
 \def\bblnov{нояб}
 \def\bbldec{дек}
+
+
+\input{licenses.latex}
