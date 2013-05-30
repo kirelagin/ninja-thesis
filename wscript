@@ -34,7 +34,11 @@ def build(bld):
             'Tools',
         ]),
         ('03', [
-            'Difficulties',
+            'Numbers',
+            'Threading',
+            'Memory',
+            'Events',
+            'Tailrec',
         ]),
         'Conclusion',
         'Licensing',
