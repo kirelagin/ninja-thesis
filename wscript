@@ -40,6 +40,7 @@ def build(bld):
             'Events',
             'Tailrec',
             'Trampolines',
+            'Loop',
         ]),
         'Conclusion',
         'Licensing',
