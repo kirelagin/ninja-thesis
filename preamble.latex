@@ -42,6 +42,7 @@
 \renewcommand{\cfttoctitlefont}{\hspace{0.38\textwidth} \bfseries\MakeUppercase}
 \renewcommand{\cftbeforetoctitleskip}{-1em}
 \renewcommand{\cftaftertoctitle}{\mbox{}\hfill \\ \mbox{}\hfill{\footnotesize Стр.}\vspace{-2.5em}}
+\renewcommand{\cftchapfont}{\normalsize\bfseries \MakeUppercase{\chaptername} }
 \renewcommand{\cftsecfont}{\hspace{30pt}}
 \renewcommand{\cftsubsecfont}{\hspace{9pt}}
 \renewcommand{\cftbeforechapskip}{1em}
