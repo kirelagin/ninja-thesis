@@ -39,6 +39,7 @@ def build(bld):
             'Memory',
             'Events',
             'Tailrec',
+            'Trampolines',
         ]),
         'Conclusion',
         'Licensing',
