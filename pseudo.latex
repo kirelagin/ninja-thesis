@@ -1,6 +1,6 @@
 \lstdefinelanguage{Pseudo}{%
     sensitive=false,
-    morekeywords={function, if, else, switch, case},
+    morekeywords={function, if, else, switch, case, while, True, False, not},
     morecomment=[l]{//},
     morecomment=[s]{{/*}{*/}},
     morestring=[b]"
