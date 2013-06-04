@@ -81,7 +81,7 @@ interpret = function(index=0, continuation):
 \hline
 \multirow{2}{*}{Число итераций}     & \multicolumn{2}{c|}{Время работы, мс}                     \\ \cline{2-3}
                                     &   HTC liberty       &   JavaScript      \\ \hline %*
- 100                                &   0                 &   8               \\ \hline
+ 1\,000                             &   0                 &   ?               \\ \hline
  10\,000                            &   2                 &   4\,431          \\ \hline
  100\,000                           &   36                &   44\,426         \\ \hline
  1\,000\,000                        &   390               &   --              \\ \hline
