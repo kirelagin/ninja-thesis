@@ -1,23 +1,14 @@
 \title{Создание инфраструктуры \\ для исполнения в браузере приложений ОС Android}
 \author{Елагин К. В.\\
-Научный руководитель: Василинец С. П.}
+Научный руководитель: Василинец С. П., ООО «Яндекс»}
 
 
 \input{preamble.latex}
 
 \begin{document}
-$include-before$
 
 \input{Title.latex}
 \addtocounter{page}{2}
 
-$if(toc)$
 \tableofcontents
-$endif$
 
-$body$
-
-\bibliography{bib}
-
-$include-after$
-\end{document}
