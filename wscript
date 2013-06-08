@@ -31,6 +31,7 @@ def build(bld):
         ('02', [
             'Global',
             'Problem',
+            'Similar',
             'Tools',
         ]),
         ('03', [
