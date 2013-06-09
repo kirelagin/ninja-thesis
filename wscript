@@ -43,6 +43,10 @@ def build(bld):
             'Trampolines',
             'Loop',
         ]),
+        ('04', [
+            'Correctness',
+            'Performance',
+        ]),
         'Conclusion',
         'Licensing',
     ])
