@@ -32,8 +32,8 @@
  1                  & 1                     & Windows 2008R2            & Chrome 29                     \\ \hline   % kirPC-1
  2                  & 2                     & Windows 2008R2            & Chrome 29                     \\ \hline   % kirPC
  3                  & 2+HT                  & Linux 3.9.2               & Chrome 29                     \\ \hline   % lookPCG
- 4                  & ??? (8?)              & Linux ???                 & ???                           \\ \hline   % ace0
- 5                  & ??? (4?)              & ???                       & ???                           \\ \hline   % macpro0
+ 4                  & 32                    & Linux 3.5.0               & Chrome 27                     \\ \hline   % 666
+ 5                  & 4                     & Darwin 12.3.0             & Chrome 27                     \\ \hline   % macpro0
 \end{tabular}
 \end{table}
 
@@ -68,10 +68,10 @@
     \addlegendentry{3}
 
     \addplot coordinates {
-        (1, 3173)
-        (2, 3204)
-        (4, 3900)
-        (8, 4115)
+        (1, 846)
+        (2, 869)
+        (4, 883)
+        (8, 967)
     };
     \addlegendentry{4}
 
@@ -103,7 +103,7 @@
  1                                  & 881       & 1\,784    & 3\,485    & 6\,947        \\ \hline
  2                                  & 1\,215    & 1\,344    & 2\,435    & 4\,711        \\ \hline
  3                                  & 1\,124    & 1\,296    & 2\,054    & 4\,066        \\ \hline
- 4                                  & 3\,173    & 3\,204    & 3\,900    & 4\,115        \\ \hline
+ 4                                  & 846       & 869       & 883       & 967           \\ \hline
  5                                  & 934       & 981       & 1\,192    & 2\,241        \\ \hline
 \end{tabular}
 \end{table}
