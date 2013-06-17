@@ -28,9 +28,9 @@
 \label{tbl:configs}
 \begin{tabular}{|c|l|l|l|}
 \hline
- № конфигурации     & Число процессоров     & \multicolumn{1}{c|}{ОС}   & \multicolumn{1}{c|}{Браузер}  \\ \hline
- 1                  & 1                     & Windows 2008R2            & Chrome 29                     \\ \hline   % kirPC-1
- 2                  & 2                     & Windows 2008R2            & Chrome 29                     \\ \hline   % kirPC
+ № конфигурации     & Число процессоров     & \multicolumn{1}{c|}{Ядро} & \multicolumn{1}{c|}{Браузер}  \\ \hline
+ 1                  & 1                     & Windows NT 6.1.7601       & Chrome 29                     \\ \hline   % kirPC-1
+ 2                  & 2                     & Windows NT 6.1.7601       & Chrome 29                     \\ \hline   % kirPC
  3                  & 2+HT                  & Linux 3.9.2               & Chrome 29                     \\ \hline   % lookPCG
  4                  & 32                    & Linux 3.5.0               & Chrome 27                     \\ \hline   % 666
  5                  & 4                     & Darwin 12.3.0             & Chrome 27                     \\ \hline   % macpro0
