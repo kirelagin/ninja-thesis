@@ -183,6 +183,18 @@
     {\lstset{float=ht,#1}}
         {}
 
+\usepackage{pgfplots}
+\pgfkeys{/pgf/number format/.cd,
+    sci=false,
+    int detect,
+    1000 sep={\,}
+}
+\pgfplotsset{compat=newest}
+\pgfplotsset{scale only axis=true}
+\pgfplotsset{legend pos=outer north east}
+\pgfplotsset{xtick=data}
+\pgfplotsset{scaled ticks=false}
+
 % For some reason those are missing in polyglossia
 \def\bbljan{янв}
 \def\bblfeb{февр}
